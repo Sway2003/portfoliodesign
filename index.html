@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swayams Bisoyi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img class="logo" src="images/Png.png" alt="" />
+        <ul id="sideMenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-regular fa-circle-xmark fa" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-duotone fa-bars ic fa" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hey, I am <span>Swayams</span>, Frontend Developer from India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/0b1.png" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+            consectetur explicabo illo aliquam quasi placeat voluptatem cum
+            iste necessitatibus labore blanditiis neque, vitae libero enim
+            atque cupiditate voluptatum ipsum! Temporibus.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>UI/UX</span><br />I love to design Web/App Interfaces
+              </li>
+              <li><span>Web Developer</span><br />Web App Developer</li>
+              <li>
+                <span>Backend Developer</span><br />I have also gained a
+                significant knowledge in Backend Development
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>UI/UX</span><br />I love to design Web/App Interfaces
+              </li>
+              <li><span>Web Developer</span><br />Web App Developer</li>
+              <li>
+                <span>Backend Developer</span><br />I have also gained a
+                significant knowledge in Backend Development
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>UI/UX</span><br />I love to design Web/App Interfaces
+              </li>
+              <li><span>Web Developer</span><br />Web App Developer</li>
+              <li>
+                <span>Backend Developer</span><br />I have also gained a
+                significant knowledge in Backend Development
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES-->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+            harum earum laboriosam distinctio porro temporibus beatae vitae,
+            nam reiciendis optio ipsam eligendi pariatur corporis aspernatur
+            eius dolore, qui eos consectetur!
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-duotone fa-crop-simple"></i>
+          <h2>UI/UX</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+            harum earum laboriosam distinctio porro temporibus beatae vitae,
+            nam reiciendis optio ipsam eligendi pariatur corporis aspernatur
+            eius dolore, qui eos consectetur!
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>Backend</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+            harum earum laboriosam distinctio porro temporibus beatae vitae,
+            nam reiciendis optio ipsam eligendi pariatur corporis aspernatur
+            eius dolore, qui eos consectetur!
+          </p>
+          <a href="">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Works</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="images/Task-bro.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates ea aliquid quam labore.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Task-cuate.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates ea aliquid quam labore.
+              </p>
+          </div>
+          <div class="work">
+            <img src="images/Next steps-amico.png" alt="" />
+            
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-paper-plane"></i>swayamsbisoyi@gmail.com
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="#" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" id="" required />
+            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2 submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Swayams(CHAD)</p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tablecontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+
+      for (tablecontent of tablecontents) {
+        tablecontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("acive-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu() {
+      sideMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+      sideMenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwcCmn0rkka3_G1U0SJjjetG7b-OUGvoZIujh43dkuqutrmHSWk2ZSqsuB-vJx179s9Qw/exec";
+    const form = document.forms["submit-to-google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => console.log("Success!", response))
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</body>
+
+</html>
